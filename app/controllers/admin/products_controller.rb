@@ -4,7 +4,7 @@ class Admin::ProductsController < ApplicationController
   end
 
   def show
-    @product = product.find(params[:id])
+    @product = Product.find(params[:id])
   end
 
   def new
@@ -26,7 +26,7 @@ class Admin::ProductsController < ApplicationController
 
   def update
     @product = Product.find(params[:id])
-    if @product.update(product)
+    if @product.update(product_params)
       redirect_to admin_products_path
     else
       render :edit
