@@ -2,11 +2,16 @@
   <div class="container">
     <!-- brand & toggle get grouped together for better mobile display -->
     <div class="brand-header">
-      <a class="navbar-brand" href="#">JDStore3</a>
+      <a class="navbar-brand" href="/">JDStore3</a>
     </div>
 
     <!-- collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <%= link_to("Product", products_path ) %>
+        </li>
+      </ul>
       <ul class="nav navbar-nav pull-right">
         <%if !current_user %>
             <li> <%= link_to("Signup", new_user_registration_path) %></li>
