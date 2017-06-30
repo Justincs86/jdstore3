@@ -3,7 +3,11 @@
   <div class="col-md-12">
 
     <h2> 购物车 </h2>
+  <div class="pull-right">
+    <button> <%= link_to("Delete all", clean_carts_path, method: :delete, data: { confirm: "Are you sure?"}) %> </button>
+  </div>
 
+  <br><br>
     <table class="table table-bordered">
       <thead>
           <tr>
