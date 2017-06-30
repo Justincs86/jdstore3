@@ -12,7 +12,7 @@
   <%= image_tag(@product.image.thumb.url) %>
 <% end %>
 
-<%= f.input :image, :file %>
+<%= f.input :image, as: :file %>
 
   <%= f.submit "Submit" %>
 
