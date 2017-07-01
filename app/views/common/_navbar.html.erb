@@ -29,6 +29,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li> <%= link_to("Admin", admin_products_path)%> </li>
+                  <li> <%= link_to("Order List", account_orders_path) %></li>
                   <li> <%= link_to(content_tag(:i, 'Logout', class: "fa fa-sign-out"), destroy_user_session_path, method: :delete) %> </li>
                 </ul>
             </li>
