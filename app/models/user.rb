@@ -6,6 +6,8 @@ class User < ApplicationRecord
 
   has_many :products
 
+  has_many :orders
+
   def admin?
     is_admin
   end
